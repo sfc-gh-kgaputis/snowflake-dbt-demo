@@ -15,7 +15,7 @@ sources:
       - "Raw_Layer"
       - "Knoema_Economy"
     schema: ECONOMY
-    database: KNOEMA_ECONOMY_DATA_ATLAS
+    database: ECONOMY_DATA_ATLAS
     quoting:
       database: true
       schema: true
