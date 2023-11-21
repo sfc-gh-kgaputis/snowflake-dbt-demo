@@ -76,8 +76,10 @@ models:
   snowflake_demo:
     10_raw:
       +tags: "Raw_Layer"
+      +schema: raw
     20_integration:
       +tags: "Integration_Layer"
+      +schema: integration
       TPC_H_PERFORMANCE:
         +materialized: table
         +schema: TPC_H
@@ -86,6 +88,7 @@ models:
     30_presentation:
       +tags: "Presentation_Layer"
       +materialized: table
+      +schema: presentation
       # dbt supports many Snowflake specific features. Here we will make one folder all SECURE views
       sensitive:
         +materialized: view

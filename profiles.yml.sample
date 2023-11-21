@@ -23,7 +23,7 @@ SNOWFLAKE:
 
       database: "Database Name"
       warehouse: "Virtual Warehouse Name"
-      schema: "Target Schema Name"
+      schema: "shared" # Assume that model folders will be materialized into dedicated schemas, so only metadata will be stored here
       threads: 8 # A Snowflake virtual warehouse can generally process 8 queries concurrently before starting a second cluster
       client_session_keep_alive: False
       query_tag: dbt_snowflake_demo1
@@ -52,7 +52,7 @@ SNOWFLAKE:
 
       database: "Database Name"
       warehouse: "Virtual Warehouse Name"
-      schema: "Target Schema Name"
+      schema: "shared" # Assume that model folders will be materialized into dedicated schemas, so only metadata will be stored here
       threads: 8 # A Snowflake virtual warehouse can generally process 8 queries concurrently before starting a second cluster
       client_session_keep_alive: False
       query_tag: dbt_snowflake_demo1
