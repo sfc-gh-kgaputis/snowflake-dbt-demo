@@ -97,8 +97,10 @@ models:
     #  +tags: "Share_Layer"
     #50_common:
     #  +tags: "Common_Layer"
-    #60_workspace:
-    #  +tags: "Workspace_Layer"
+    60_workspace:
+      +tags: "Workspace_Layer"
+      +materialized: table
+      +schema: workspace
 
   # The dbt_artifacts configuration here is for logging your executions
   dbt_artifacts:

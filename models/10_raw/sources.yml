@@ -10,6 +10,16 @@ sources:
     tables:
       - name: customer_cdc_st
 
+  - name: RAW_DEMO
+    tags:
+      - "Raw_Layer"
+      - "Demo_Datasets"
+    schema: RAW
+    database: DBT_DEMO_DB
+    tables:
+      - name: company_revenue
+      - name: plan_details
+
   - name: KNOEMA_ECONOMY
     tags:
       - "Raw_Layer"
